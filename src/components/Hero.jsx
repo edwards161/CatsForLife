@@ -8,7 +8,7 @@ function App() {
 		const fetchCats = async () => {
 			try {
 				const response = await fetch(
-					'https://api.thecatapi.com/v1/images/search',
+					'https://api.thecatapi.com/v1/images/search?limit=2',
 				);
 				if (!response.ok) {
 					throw new Error(response.statusText);
@@ -25,7 +25,8 @@ function App() {
 	}, []);
 
 	return (
-		<div className="App">
+		<div className="gallery">
+		<div className="tile">
 			{cats.map((cat, index) => (
 				<div key={index}>
 					{error && <p>{error}</p>}
@@ -33,6 +34,7 @@ function App() {
 					<img src={cat.url} alt="cat mug shot" />
 				</div>
 			))}
+		</div>
 		</div>
 	);
 }
