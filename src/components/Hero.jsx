@@ -8,7 +8,7 @@ function App() {
 		const fetchCats = async () => {
 			try {
 				const response = await fetch(
-					'https://api.thecatapi.com/v1/images/search?limit=2',
+					'https://api.thecatapi.com/v1/images/search?limit=4',
 				);
 				if (!response.ok) {
 					throw new Error(response.statusText);
@@ -24,6 +24,10 @@ function App() {
 		fetchCats();
 	}, []);
 
+	const onClick = () => {
+		// addToBasket({ id, name, price, image });
+	};
+
 	return (
 		<div className="gallery">
 		<div className="tile">
@@ -32,6 +36,7 @@ function App() {
 					{error && <p>{error}</p>}
           <h2>{cat.id}</h2>
 					<img src={cat.url} alt="cat mug shot" />
+					<button onClick={onClick}>Add to Basket</button>
 				</div>
 			))}
 		</div>
