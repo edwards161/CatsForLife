@@ -1,4 +1,7 @@
-const AboutCats = ({cat}) => {
+const AboutCats = ({cat,addToList}) => {
+    const onClick = (e) => {
+		addToList(e);
+	};
     return(
         <div className="aboutCatsPage">
             <h3>About Me</h3>
@@ -9,6 +12,7 @@ const AboutCats = ({cat}) => {
             <h4>Location: {cat.city}</h4>
             <h4>Sex: {cat.gender}</h4>
             <h2>Price: £{cat.price}</h2>
+            <button onClick={()=>onClick(cat)}>Add to Basket</button>
           </div>
     )
 }

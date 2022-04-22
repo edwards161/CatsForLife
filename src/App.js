@@ -8,6 +8,7 @@ import GetData from './utils/GetData';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 function App() {
+  const [list,setlist]= useState([])
   const [catData, setCatData] = useState([]);
 
   useEffect(() => {
@@ -22,15 +23,17 @@ function App() {
       setCatData(data);
     })();
   }, []);
+  const addToList =(item)=>setlist([...list, item]);
+
 
   return (
     <BrowserRouter>
     <div className="App">
-      <Navbar />
+      <Navbar list={list}/>
      <div className="content">
        <Routes>
-       <Route path='/' element={<Home catData={catData}/>}/>
-        <Route path="/AboutCat" element={<AboutCats catData={catData}/>}>
+       <Route path='/' element={<Home catData={catData} addToList={addToList}/>}/>
+        <Route path="/AboutCat" element={<AboutCats catData={catData} addToList={addToList}/>}>
           <Route path=":name"/>
           </Route>
        </Routes>

@@ -1,10 +1,10 @@
 import {Link} from 'react-router-dom'
-function App({catData}) {
+function App({catData,addToList}) {
 
 
 
-	const onClick = () => {
-		// addToBasket({ id, name, price, image });
+	const onClick = (e) => {
+		addToList(e);
 	};
 
 	return (
@@ -16,7 +16,7 @@ function App({catData}) {
 					<img src={cat.image} alt="cat mug shot" />
 					<div>
 					<Link to={`/aboutCat/${cat.name}`}>About Me</Link>
-					<button onClick={onClick}>Add to Basket</button>
+					<button onClick={()=>onClick(cat)}>Add to Basket</button>
 					</div>
 				</div>
 			))}

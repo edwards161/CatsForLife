@@ -1,14 +1,14 @@
 import {Link} from 'react-router-dom'
 import BasketModal from './Basket'
 
-const Navbar = () => {
+const Navbar = ({list,addToList}) => {
     return ( 
         <nav className="navbar">
             <h1>£Cat Converters</h1>
             <div className="links">
 
                <Link to="/">Home</Link>
-               <BasketModal />
+               <BasketModal list={list} addToList={addToList}/>
             </div>
         </nav>
      );
