@@ -10,9 +10,9 @@ export default function BasketModal() {
 
   return (
     <>
-      <a onClick={toggleBasketModal} className="btn-modal">
+      <p onClick={toggleBasketModal} className="btn-modal">
         Basket
-      </a>
+      </p>
 
       {basketModal && (
         <div className="basket-modal">
@@ -22,9 +22,9 @@ export default function BasketModal() {
             <p className="total">
                 Total cost:
             </p>
-            <a className="close-basket-modal" onClick={toggleBasketModal}>
+            <p className="close-basket-modal" onClick={toggleBasketModal}>
               CLOSE
-            </a>
+            </p>
           </div>
         </div>
       )}

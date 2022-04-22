@@ -21,12 +21,12 @@
 .navbar .links {
   margin-left: auto;
 }
-.navbar a {
+.navbar p {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
-.navbar a:hover {
+.navbar p:hover {
   color: crimson;
 }
 .content {
