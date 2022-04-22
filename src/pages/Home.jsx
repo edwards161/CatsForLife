@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { faker } from '@faker-js/faker';
 
-const numCats = 4;
+const numCats = 8;
 const minPrice = 100;
 const maxPrice = 500;
 const newCats = [];

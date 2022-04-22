@@ -1,7 +1,7 @@
 const Footer = () => {
 	return (
 		<div className="footer">
-			<span>A cat is for life not for breakfast</span>{' '}
+			<span>we_sell_any_cat.com</span>{' '}
 		</div>
 	);
 };
