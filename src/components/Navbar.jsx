@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import BasketModal from './Basket'
 
 const Navbar = () => {
@@ -5,7 +6,8 @@ const Navbar = () => {
         <nav className="navbar">
             <h1>£Cat Converters</h1>
             <div className="links">
-               <p>Home</p>
+
+               <Link to="/">Home</Link>
                <BasketModal />
             </div>
         </nav>
