@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
 import GetImage from './utils/GetImages';
 import GetData from './utils/GetData';
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 
 
@@ -26,13 +27,17 @@ function App() {
   }, []);
 
   return (
+    <BrowserRouter>
     <div className="App">
       <Navbar />
      <div className="content">
-       <Home catData={catData}/>
+       <Routes>
+       <Route path='/' element={<Home catData={catData}/>}/>
+       </Routes>
      </div>
      <Footer />
     </div>
+    </BrowserRouter>
   );
 }
 
