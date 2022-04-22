@@ -14,8 +14,10 @@ function App({catData}) {
 				<div key={index}>
           			<h2>{cat.name}</h2>
 					<img src={cat.image} alt="cat mug shot" />
+					<div>
 					<Link to={`/aboutCat/${cat.name}`}>About Me</Link>
-					{/* <button onClick={onClick}>Add to Basket</button> */}
+					<button onClick={onClick}>Add to Basket</button>
+					</div>
 				</div>
 			))}
 		</div>
