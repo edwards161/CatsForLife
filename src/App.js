@@ -1,4 +1,5 @@
 import Home from './pages/Home';
+import AboutCats from './pages/AboutCats'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
@@ -29,6 +30,9 @@ function App() {
      <div className="content">
        <Routes>
        <Route path='/' element={<Home catData={catData}/>}/>
+        <Route path="/AboutCat" element={<AboutCats catData={catData}/>}>
+          <Route path=":name"/>
+          </Route>
        </Routes>
      </div>
      <Footer />

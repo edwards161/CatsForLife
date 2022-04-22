@@ -6,9 +6,7 @@ const GetData = () => {
   for (let i = 0; i < 8; i++) {
     const genders = ["male", "female"];
     const gender = faker.random.arrayElement(genders);
-
     const name = faker.name.firstName(gender);
-
     const city = faker.address.city();
     const breed = faker.animal.cat();
     const age = faker.datatype.number(20);
