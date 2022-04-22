@@ -5,10 +5,6 @@ import { useEffect, useState } from 'react';
 import GetImage from './utils/GetImages';
 import GetData from './utils/GetData';
 
-
-
-
-
 function App() {
   const [catData, setCatData] = useState([]);
 

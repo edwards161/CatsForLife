@@ -10,7 +10,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto;
   border-bottom: 1px solid silver;
 }
@@ -30,26 +30,29 @@
   color: crimson;
 }
 .content {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 1000px;
+  margin: 20px auto;
   padding: 20px;
 }
 
 .gallery {
   display: flex;
+  max-width: 1000px;
   flex-wrap: wrap;
+ 
   justify-content: center;
   text-align: center;
-  margin: 30px 0 30px 0;
+  margin: 20px 0 20px 0;
 }
 .tile {
   display: flex;
+  flex-flow: row wrap;
   padding: 20px 20px 20px 20px;
   background-color: white;
   margin: 10px 5px 10px 2px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  border-radius: 15px;
+  border-radius: 10px;
   justify-content: center;
 }
 

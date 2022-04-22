@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 const GetData = () => {
   const arr = [];
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 8; i++) {
     const genders = ["male", "female"];
     const gender = faker.random.arrayElement(genders);
 
