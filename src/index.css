@@ -61,7 +61,7 @@
 .tile img:hover {
   transform: scale(1.05);
 }
-.tile img {
+img {
   margin: 10px;
   width: 200px;
   height: 200px;
