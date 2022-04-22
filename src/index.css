@@ -10,7 +10,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto;
   border-bottom: 1px solid silver;
 }
@@ -21,35 +21,38 @@
 .navbar .links {
   margin-left: auto;
 }
-.navbar a {
+.navbar p {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
-.navbar a:hover {
+.navbar p:hover {
   color: crimson;
 }
 .content {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 1000px;
+  margin: 20px auto;
   padding: 20px;
 }
 
 .gallery {
   display: flex;
+  max-width: 1000px;
   flex-wrap: wrap;
+ 
   justify-content: center;
   text-align: center;
-  margin: 30px 0 30px 0;
+  margin: 20px 0 20px 0;
 }
 .tile {
   display: flex;
+  flex-flow: row wrap;
   padding: 20px 20px 20px 20px;
   background-color: white;
   margin: 10px 5px 10px 2px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  border-radius: 15px;
+  border-radius: 10px;
   justify-content: center;
 }
 
@@ -124,4 +127,42 @@
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.basket-modal {
+  width: 100vw;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(49,49,49,0.8);
+}
+.basket-modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  background: #f1f1f1;
+  padding: 15px 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  min-width: 500px;
+}
+
+.close-basket-modal {
+  position: absolute;
+  top: 18px;
+  right: 10px;
 }

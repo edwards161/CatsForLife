@@ -6,10 +6,6 @@ import GetImage from './utils/GetImages';
 import GetData from './utils/GetData';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
-
-
-
-
 function App() {
   const [catData, setCatData] = useState([]);
 
