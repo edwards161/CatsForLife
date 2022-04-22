@@ -13,6 +13,7 @@ function App({catData,addToList}) {
 			{catData.map((cat, index) => (
 				<div key={index}>
           			<h2>{cat.name}</h2>
+					  <h2>£{cat.price}</h2>
 					<img src={cat.image} alt="cat mug shot" />
 					<div>
 					<Link to={`/aboutCat/${cat.name}`}>About Me</Link>

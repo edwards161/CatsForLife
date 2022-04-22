@@ -24,12 +24,16 @@ function App() {
     })();
   }, []);
   const addToList =(item)=>setlist([...list, item]);
-
+  const removeFromList = (i) => {
+    let storedList = [...list];
+    storedList.splice(i, 1);
+    setlist(storedList);
+  };
 
   return (
     <BrowserRouter>
     <div className="App">
-      <Navbar list={list}/>
+      <Navbar list={list} removeFromList={removeFromList}/>
      <div className="content">
        <Routes>
        <Route path='/' element={<Home catData={catData} addToList={addToList}/>}/>
