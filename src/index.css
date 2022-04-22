@@ -85,7 +85,7 @@
 
 .tile button {
   background-color: white;
-  border: solid 2px lightskyblue;
+  border: solid 2px mediumseagreen;
   margin-left: 10px;
   padding: 10px 10px 10px 10px;
   font-size: 15px;
@@ -101,7 +101,7 @@
 
 .tile a {
   background-color: white;
-  border: solid 2px #ff9999;
+  border: solid 2px cornflowerblue;
   margin-left: 10px;
   padding: 10px 10px 10px 10px;
   font-size: 15px;
@@ -112,7 +112,7 @@
 }
 
 .tile a:hover {
-  background-color: #ff9999;
+  background-color: cornflowerblue;
   color: white;
 }
 
