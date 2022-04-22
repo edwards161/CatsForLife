@@ -6,6 +6,7 @@ const Navbar = () => {
         <nav className="navbar">
             <h1>£Cat Converters</h1>
             <div className="links">
+
                <Link to="/">Home</Link>
                <BasketModal />
             </div>
