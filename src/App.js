@@ -23,7 +23,9 @@ function App() {
       setCatData(data);
     })();
   }, []);
+
   const addToList =(item)=>setlist([...list, item]);
+  
   const removeFromList = (i) => {
     let storedList = [...list];
     storedList.splice(i, 1);
